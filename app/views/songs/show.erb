@@ -1,0 +1,11 @@
+
+
+<!-- for the song show page you need to have it display each of the song's genre and artist, and link to the respective genre and artist show pages. -->
+
+<h1>My Song</h1>
+
+<label><%= @song.name %></label><br>
+
+<%= link_to "My Genre", genre_path(@song.genre_id) %><br>
+
+<%= link_to "My Artist", artist_path(@song.artist_id) %>
